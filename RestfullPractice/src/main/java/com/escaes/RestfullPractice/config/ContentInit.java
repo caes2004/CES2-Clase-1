@@ -39,6 +39,17 @@ public class ContentInit implements CommandLineRunner {
                     null,
                     "pythonurl.com");
             contentRepository.save(content2);
+
+            Content content3 =new Content(
+                    3,
+                    "Blog about new elements of Java",
+                    "This blog is a new release of the new",
+                    Status.IDEA,
+                    Type.BLOG,
+                    LocalDateTime.now(),
+                    null,
+                    "myurl.com");
+            contentRepository.save(content3);
         }
     }
 }
